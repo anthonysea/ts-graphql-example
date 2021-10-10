@@ -1,0 +1,41 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Anthony\.yarn\releases\yarn-1.22.10.cjs add apollo-server-express express graphql reflect-metadata type-grahql
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\iis express\PHP\v5.4;c:\program files\common files\microsoft shared\windows live;c:\program files (x86)\common files\microsoft shared\windows live;c:\program files (x86)\intel\icls client\;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\ati technologies\ati.ace\core-static;c:\program files\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\ipt;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files (x86)\intel\intel(r) management engine components\ipt;c:\program files\microsoft\web platform installer\;c:\program files (x86)\microsoft asp.net\asp.net web pages\v1.0\;c:\program files (x86)\windows kits\8.0\window;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2018b\bin;C:\Java\jdk1.8.0_201\bin;C:\hadoop-2.9.2\bin;C:\Program Files\dotnet\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Git\cmd;C:\Users\Anthony\Documents\coding\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\dotnet\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PowerShell\7\;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Ruby26-x64\bin;C:\Users\Anthony\AppData\Local\Programs\Python\Python37\;C:\Users\Anthony\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Anthony\AppData\Roaming\Python\Python37\Scripts;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;C:\Program Files (x86\Java\jdk1.7.0_21\bin;C:\Users\Anthony\AppData\Local\.meteor;C:\Program Files (x86)\Nmap;C:\Users\Anthony\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Anthony\AppData\Local\Android\sdk\platform-tools;C:\Users\Anthony\AppData\Local\Chromium\chromedriver;C:\Users\Anthony\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MiniZinc IDE (bundled);C:\Users\Anthony\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\src\flutter\bin;C:\MinGW\bin;C:\Program Files\CMake\bin;C:\Program Files\xtensa-esp32-elf\bin;C:\Users\Anthony\.dotnet\tools;C:\Users\Anthony\.platformio\penv\Scripts;C:\Users\Anthony\AppData\Roaming\npm;C:\Program Files\PostgreSQL\13\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.6
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/type-grahql: Not found
+      at Request.params.callback [as _callback] (C:\Users\Anthony\.yarn\releases\yarn-1.22.10.cjs:78518:18)
+      at Request.self.callback (C:\Users\Anthony\.yarn\releases\yarn-1.22.10.cjs:135160:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (C:\Users\Anthony\.yarn\releases\yarn-1.22.10.cjs:136132:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (C:\Users\Anthony\.yarn\releases\yarn-1.22.10.cjs:136054:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "ts-graphql-example",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
