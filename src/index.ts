@@ -33,7 +33,7 @@ const main = async () => {
     // Apollo server gives us access to the context object
     // which can then be passed the request object which comes from Express
     // and can now be accessed in our resolvers
-    context: ({ req }) => ({ req }),
+    context: ({ req, res }) => ({ req, res}),
   });
 
   const app = Express();
