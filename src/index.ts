@@ -21,7 +21,7 @@ const main = async () => {
 
   // TypeGraphQL schema, pass in resolvers that we are going to use
   const schema = await buildSchema({
-    resolvers: [__dirname + "/modules/**/*.ts"],
+    resolvers: [__dirname + "/modules/**/*.ts"], // Automatically discover any resolvers in the modules directory
     authChecker: ({ context: { req } }) => {
       return !!req.session.userId;
     },
