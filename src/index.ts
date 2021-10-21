@@ -10,10 +10,6 @@ require("dotenv").config();
 // import "dotenv/config";
 
 import { redis } from "./redis";
-import { RegisterResolver } from "./modules/user/Register";
-import { MeResolver } from "./modules/user/Me";
-import { LoginResolver } from "./modules/user/Login";
-import { ConfirmUserResolver } from "./modules/user/ConfirmUser";
 
 // Constants
 import { COOKIE_NAME, __prod__ } from "./constants";
@@ -25,12 +21,7 @@ const main = async () => {
 
   // TypeGraphQL schema, pass in resolvers that we are going to use
   const schema = await buildSchema({
-    resolvers: [
-      RegisterResolver,
-      LoginResolver,
-      MeResolver,
-      ConfirmUserResolver,
-    ],
+    resolvers: [__dirname + "/modules/**/*.ts"],
     authChecker: ({ context: { req } }) => {
       return !!req.session.userId;
     },

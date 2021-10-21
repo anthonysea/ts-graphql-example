@@ -1,6 +1,6 @@
 # TypeScript GraphQL Backend Example
 
-Repo to learn about using TypeScript, TypeGraphQL, Express, and Sessions 
+Repo to learn about using TypeScript, TypeGraphQL, TypeORM, Express, and Sessions 
 
 ## Prerequisites
 
@@ -26,4 +26,6 @@ Repo to learn about using TypeScript, TypeGraphQL, Express, and Sessions
 - Start the server (defaults to http://localhost:4000)
 
 `yarn start`
+
+- Visit the GraphQL Studio and start using the queries/mutations
 
