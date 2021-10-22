@@ -23,7 +23,8 @@ export class RegisterResolver {
   async register(
     @Arg("data") { firstName, lastName, email, password }: RegisterInput
   ): Promise<User> {
-    const hashedPassword = await bcrypt.hash(password, process.env.SALT!);
+    console.log(process.env.SALT!);
+    const hashedPassword = await bcrypt.hash(password, 12); 
 
     const user = await User.create({
       firstName,

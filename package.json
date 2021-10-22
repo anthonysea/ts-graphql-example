@@ -29,6 +29,7 @@
     "@types/express-session": "^1.17.4",
     "@types/graphql": "^14.5.0",
     "@types/ioredis": "^4.27.6",
+    "@types/jest": "^27.0.2",
     "@types/node": "^16.10.3",
     "@types/nodemailer": "^6.4.4",
     "@types/uuid": "^8.3.1",
@@ -43,6 +44,8 @@
   "scripts": {
     "start": "ts-node-dev --respawn src/index.ts",
     "watch": "tsc -w",
-    "dev": "nodemon dist/index.js"
+    "dev": "nodemon dist/index.js",
+    "db:setup": "ts-node ./src/test-utils/setup.ts",
+    "test": "npm run db:setup && jest"
   }
 }

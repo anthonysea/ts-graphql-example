@@ -1,4 +1,4 @@
-import { confirmUserPrefix } from "src/constants";
+import { confirmUserPrefix } from "../../constants";
 import { Arg, Mutation, Resolver } from "type-graphql";
 
 import { User } from "../../entity/User";

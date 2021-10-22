@@ -1,4 +1,4 @@
-import { forgotPasswordPrefix } from "src/constants";
+import { forgotPasswordPrefix } from "../../constants";
 import { v4 } from "uuid";
 import { redis } from "../../redis";
 

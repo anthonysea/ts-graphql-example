@@ -1,7 +1,6 @@
 import "reflect-metadata";
 import { ApolloServer } from "apollo-server-express";
 import Express from "express";
-import { buildSchema } from "type-graphql";
 import { createConnection } from "typeorm";
 import session from "express-session";
 import connectRedis from "connect-redis";
@@ -13,6 +12,7 @@ import { redis } from "./redis";
 
 // Constants
 import { COOKIE_NAME, __prod__ } from "./constants";
+import { createSchema } from "./utils/createSchema";
 const SESSION_SECRET = process.env.SESSION_SECRET!;
 
 const main = async () => {
@@ -20,12 +20,7 @@ const main = async () => {
   await createConnection();
 
   // TypeGraphQL schema, pass in resolvers that we are going to use
-  const schema = await buildSchema({
-    resolvers: [__dirname + "/modules/**/*.ts"], // Automatically discover any resolvers in the modules directory
-    authChecker: ({ context: { req } }) => {
-      return !!req.session.userId;
-    },
-  });
+  const schema = await createSchema();
 
   // Create apollo server using our TypeGraphQL schema
   const apolloServer = new ApolloServer({

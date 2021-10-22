@@ -1,11 +1,11 @@
-import { forgotPasswordPrefix } from "src/constants";
-import { redis } from "src/redis";
+import { forgotPasswordPrefix } from "../../constants";
+import { redis } from "../../redis";
 import { Arg, Ctx, Mutation, Resolver } from "type-graphql";
 import bcrypt from 'bcryptjs';
 
 import { User } from "../../entity/User";
 import { ChangePasswordInput } from "./changePassword/ChangePasswordInput";
-import { MyContext } from "src/types/MyContext";
+import { MyContext } from "../../types/MyContext";
 
 @Resolver(User)
 export class ChangePasswordResolver {

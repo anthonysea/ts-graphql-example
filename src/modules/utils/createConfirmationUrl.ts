@@ -1,4 +1,4 @@
-import { confirmUserPrefix } from "src/constants";
+import { confirmUserPrefix } from "../../constants";
 import { v4 } from "uuid";
 import { redis } from "../../redis";
 
