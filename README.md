@@ -29,3 +29,11 @@ Repo to learn about using TypeScript, TypeGraphQL, TypeORM, Express, and Session
 
 - Visit the GraphQL Studio and start using the queries/mutations
 
+## Tests
+
+- Use `yarn 
+
+## Notes
+
+- Project uses a fractal directory structure, idea from [here](https://hackernoon.com/fractal-a-react-app-structure-for-infinite-scale-4dab943092af)
+
